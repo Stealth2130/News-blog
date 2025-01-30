@@ -1,0 +1,114 @@
+/*Стили для подвала*/
+
+footer {
+  background-color: #2963a3;
+  padding: 40px 120px 17px;
+  margin: 0 -120px;
+}
+
+.footer__section-one {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.footer__menu ul {
+  columns: auto 2;
+  column-gap: 93px;
+  list-style: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__menu li {
+  padding: 8px 0;
+}
+
+.footer__menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__subscription {
+  width: 450px;
+}
+
+.footer__subscription-text {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.email {
+  width: 384px;
+  height: 48px;
+  display: flex;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  margin: 8px 0;
+  background-color: white;
+}
+
+#email {
+  flex-grow: 1;
+  /* Поле занимает всё доступное пространство */
+  border: none;
+  outline: none;
+  /* Очертание при фокусе отсутствует */
+  padding: 14px 16px;
+  border-radius: inherit;
+}
+
+.email button {
+  background: #16c8bb;
+  padding: 0;
+  width: 64px;
+  background-image: url(images/email-button.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#email[placeholder] {
+  color: #9d9d9d;
+}
+
+.footer__subscription-personal {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__icons-sk {
+  width: 221px;
+  height: 50px;
+  margin-bottom: 40px;
+}
+
+.footer__icons-social {
+  display: flex;
+  flex-direction: row;
+  column-gap: 16px;
+}
+
+.footer__icons-social img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer__hr {
+  border-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  margin-top: 26px;
+  margin-bottom: 16px;
+}
+
+.footer__section-two {
+  display: inline-flex;
+  column-gap: 48px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+

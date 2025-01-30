@@ -1,0 +1,144 @@
+@import "./footer.css";
+@import "./header.css";
+
+/*Настройка для секций*/
+.menu {
+  display: flex;
+  flex-flow: row wrap;
+  color: #333333;
+  font-size: 12px;
+}
+
+.menu p {
+  margin: 0;
+  padding-left: 1em;
+  flex-wrap: nowrap;
+}
+
+.tags ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0px;
+  column-gap: 8px;
+  text-align: center;
+  & li {
+    display: flex;
+    flex-direction: row;
+  }
+  /*
+    overflow-x: auto;
+  overflow-y: hidden;
+*/
+}
+
+.tags ul li {
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  border: 1px solid #c1c5cd;
+  height: 1em;
+  border-radius: 24px;
+  padding: 6px 8px;
+  margin-bottom: 8px;
+}
+
+/*Настройка для статьи*/
+
+/*
+.articles {
+    padding: 24px 0;
+}
+*/
+
+.articles__section-one,
+.articles__section-two {
+  display: grid;
+  column-gap: 24px;
+}
+.articles__section-one {
+  grid-template-columns: repeat(2, 588px);
+}
+.articles__section-two {
+  grid-template-columns: repeat(3, 384px);
+}
+
+.section-one__article,
+.section-two__article {
+  box-sizing: border-box;
+  border: 1px solid #dedede;
+  border-radius: 30px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.article__picture {
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  height: 260px;
+}
+
+.article__tags ul {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  position: absolute;
+  z-index: 3;
+  padding: 8px;
+  margin: 0;
+  list-style: none;}
+.article__tag {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  outline: 1px solid #c1c5cd;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 24px;
+  padding: 6px 8px;
+  font-size: 14px;
+  font-weight: 600;}
+.smile {
+  height: 1rem;
+  width: 1rem;
+  padding-right: 5px;}
+
+.article__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  overflow: clip;
+
+  & p {
+    overflow: hidden;
+  }
+}
+
+.author {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.date {
+  font-size: 12px;
+}
+
+.button-else button {
+  background-color: #35b3a9;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  width: 182px;
+  padding: 12px;
+}
+
+.button-else {
+  width: 182px;
+  margin: 56px auto;
+}

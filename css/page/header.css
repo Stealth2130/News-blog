@@ -1,0 +1,41 @@
+.header__menu {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.header__menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.header__menu ul li {
+  padding: 0 15px;
+}
+
+.header__menu li a {
+  color: black;
+  text-decoration: none;
+}
+
+.header__button {
+  position: absolute;
+  right: 0;
+  background-color: #e3f5f5;
+  color: #03b2a5;
+  padding: 14px 20px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.header__hamburger_menu {
+  display: none;
+}
+
+.header__hamburger_menu-line {
+  width: 30px;
+  height: 3px;
+  background-color: #03b2a5;
+  margin: 5px;
+}
